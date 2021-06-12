@@ -9,5 +9,7 @@ class Uuid extends Model
 {
     use HasFactory;
 
+    protected $dateFormat = 'Y-m-d H:i:s.u';
+
     public const UPDATED_AT = null;
 }

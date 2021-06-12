@@ -23,7 +23,7 @@ class UuidFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => Str::uuid()
+            'uuid' => Str::uuid(),
         ];
     }
 }

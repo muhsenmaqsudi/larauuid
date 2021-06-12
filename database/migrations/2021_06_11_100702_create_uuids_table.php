@@ -14,9 +14,8 @@ class CreateUuidsTable extends Migration
     public function up()
     {
         Schema::create('uuids', function (Blueprint $table) {
-            $table->id();
-            $table->uuid('uuid')->unique();
-            $table->timestamp('created_at')->useCurrent();
+            $table->uuid('uuid');
+            $table->timestamp('created_at', 6)->useCurrent();
         });
     }
 
